@@ -1,0 +1,48 @@
+#main-container{
+    width: 90vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10vw;
+}
+
+.hiddenobj{
+    width: 25vw;
+    height: 25vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 500ms;
+    -o-transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+}
+
+.hiddenobj >h2{
+    font-size: calc(var(--text-size) * 1.2);
+
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+
+}
+
+.hiddenobj >img{
+    position: absolute;
+    width: 30vw;
+    height: auto;
+
+    transition: 500ms;
+    -o-transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+}
+
+#message{
+    margin-top: 25vh;
+}

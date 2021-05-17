@@ -1,0 +1,198 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../media/bg-main.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    --text-size: 3rem;
+}
+
+#alegeti-joc{
+    color: black;
+    background: #ffef62;
+    font-size: 5vw;
+    font-family: 'Calistoga', cursive;
+    border: none;
+
+    border-radius: 10vw;
+    text-align: center;
+    position: relative;
+    width: max-content;
+
+    margin: auto;
+    margin-top: 25vh;
+    margin-bottom: 5vw;
+
+    padding: 3vw;
+
+}
+
+#poll{
+
+    height: 55vh;
+    width: 10vw;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    position: absolute;
+    bottom: 0;
+    border-radius: 30% 30% 0 0;
+
+    background: url("../media/poll.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.poll-item{
+    color: white;
+    height: 10vw;
+    width: 40vw;
+    margin-bottom: 5vw;
+    font-size: 4vw;
+    font-weight: bold;
+    background: burlywood;
+    border: none;
+}
+.poll-item:nth-child(1){
+    margin-top: 5vw;
+    transform: translateX(10%);
+    background: url("../media/plankr.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.poll-item:nth-child(2){
+    transform: translateX(-90%);
+    background: url("../media/plankl.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.poll-item:nth-child(3){
+    transform: translateX(10%);
+    background: url("../media/plankr.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.poll-item:nth-child(4){
+    transform: translateX(-90%);
+    background: url("../media/plankl.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#dif-age,#btn-dif{
+    margin-left:50%;
+    width: max-content;
+    transform: translateX(-50%);
+    margin-top: 5vh;
+}
+#btn-dif{
+    margin-top: 18vh;
+}
+
+#dif-age{
+    padding: 4vw;
+    font-size: calc(var(--text-size) - 0.5rem);
+    color: #1f1f1f;
+    background: #feffc9;
+    font-family: 'Calistoga', cursive;
+    border: none;
+    margin-top: 1vh;
+
+    transform-origin: center;
+    transition: 300ms;
+    -o-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+#btn-dif::after{
+    content: "";
+
+    height: 22.5vw;
+    width: 22.5vw;
+
+    position: absolute;
+
+    transform: translateY(60%) translateX(120%);
+
+    background: url("../media/deget.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    animation: 1.2s blinkfinger infinite forwards normal;
+    animation-iteration-count: 3;
+
+}
+
+@keyframes blinkfinger {
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+#dif-img{
+    margin-left: 5vw;
+
+    width: 90vw;
+    height: auto;
+}
+
+#main-container{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 7vw;
+}
+
+#btn-container{
+    position: absolute;
+    width: 100%;
+    bottom: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    padding: 4vw;
+    font-size: var(--text-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1f1f1f;
+    background: #faff68;
+    font-family: 'Calistoga', cursive;
+    border: none;
+    border-radius: 10vw;
+}
+
+
+#message{
+    text-align: center;
+    font-size: calc(var(--text-size) * 1.5);
+}
+
